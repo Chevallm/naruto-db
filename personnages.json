@@ -1,0 +1,26 @@
+[
+  {
+    "prenom": "Naruto",
+    "nom": "Uzumaki",
+    "pays": "Konoha",
+    "surnoms": [ "le cancre", "le héros" ],
+    "naissance": "10 octobre",
+    "genre": "male",
+    "natureChakra": ["vent"],
+    "classeDeNinja": ["Ermite","Jinchûriki"],
+    "clan": "Uzumaki",
+    "jutsu": ["multiclonage","razengan", "sexy justu"]
+  },
+  {
+    "prenom": "Boruto",
+    "nom": "Uzumaki",
+    "pays": "Konoha",
+    "surnoms": [ "le fils du 7e hokage" ],
+    "naissance": "10 mai",
+    "genre": "male",
+    "natureChakra": ["vent"],
+    "classeDeNinja": ["Sensoriel"],
+    "clan": "Uzumaki",
+    "jutsu": ["multiclonage"]
+  }
+]

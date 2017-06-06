@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Naruto IHM</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" charset="utf-8"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+</head>
+
+<body>
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo center">Naruto DB</a>
+    </div>
+  </nav>
+  <main class="grey lighten-4">
+    <div class="container">
+      <div class="row">
+        <div class="col s12">
+          <div class="card">
+            <div class="card-content">
+              <div class="card-title">
+                <p>Ajout d'un ninja</p>
+              </div>
+              <div class="row">
+                <div class="col s6 offset-s3">
+                  <form action="/add" method="post">
+                    <div class="input-field col s12">
+                      <input type="text" name="prenom" id="prenom" class="validate">
+                      <label for="prenom">Prénom</label>
+                    </div>
+                    <div class="input-field col s12">
+                      <input type="text" name="nom" id="nom" class="validate">
+                      <label for="nom">Nom</label>
+                    </div>
+                    <div class="input-field col s12">
+                      <input type="text" name="pays" id="pays" class="validate">
+                      <label for="pays">Pays</label>
+                    </div>
+                    <div class="input-field col s12">
+                      <input type="text" name="surnoms" id="surnoms" class="validate">
+                      <label for="surnoms">Surnoms (séparés par un point-virgule)</label>
+                    </div>
+                    <div class="input-field col s12">
+                      <input type="text" name="naissance" id="naissance" class="validate">
+                      <label for="naissance">Naissance (jj/MM)</label>
+                    </div>
+                    <div class="input-field col s12">
+                    <select>
+                      <option value="" disabled selected>Genre</option>
+                      <option value="male">Male</option>
+                      <option value="femele">Femele</option>
+                      <option value="autre">Autre</option>
+                    </select>
+                    <label>Genre</label>
+                  </div>
+                  <div class="input-field col s12">
+                    <select multiple>
+                      <option value="" disabled selected>Choose your option</option>
+                      <option value="" data-icon="images/sample-1.jpg" class="left circle">Suiton</option>
+                      <option value="" data-icon="images/office.jpg" class="left circle">Raiton</option>
+                      <option value="" data-icon="images/yuna.jpg" class="left circle">Fûton</option>
+                      <option value="" data-icon="images/yuna.jpg" class="left circle">Doton</option>
+                      <option value="" data-icon="images/yuna.jpg" class="left circle">Katon</option>
+                    </select>
+                    <label>Nature du chakra</label>
+                  </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="page-footer">
+       <div class="footer-copyright">
+         <div class="container">
+         © 2017
+         <a class="grey-text text-lighten-4 right" href="/add">Ajouter un ninja</a>
+         </div>
+       </div>
+     </footer>
+  <script type="text/javascript">
+  $(document).ready(function() {
+    $('select').material_select();
+  });
+  </script>
+</body>
+
+</html>
